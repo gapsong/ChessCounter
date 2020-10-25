@@ -72,4 +72,11 @@ describe('test heatmap.js', () => {
             { square: 'h8', value: -2 },
         ])
     })
+
+    it('should for rooks', () => {
+        const board = new Chess('n1R3R1/8/8/8/8/8/8/8 w - - 0 1')
+        board.ascii()
+        influences(board.fen())
+        console.log('influences(board.fen()): ', influences(board.fen()));
+    })
 })
