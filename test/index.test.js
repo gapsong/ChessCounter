@@ -170,7 +170,7 @@ describe('test heatmap.js', () => {
         })
     })
 
-    it('should calculate attackers for battery bishop and queen', () => {
+    it('should calculate attackers for battery bishop and pawn', () => {
         const board = new Chess('8/8/8/8/5P2/8/3B4/8 w - - 0 1')
         influences(board.fen())
         expect(influences(board.fen())).toEqual({
