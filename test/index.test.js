@@ -99,19 +99,24 @@ describe('test heatmap.js', () => {
     })
 
     it('should calculate attackers for battery rooks and queen', () => {
-        const board = new Chess('n1R3R1/8/8/8/8/8/8/8 w - - 0 1')
+        const board = new Chess('n1R3RQ/8/8/8/8/8/8/8 w - - 0 1')
         expect(influences(board.fen())).toEqual({
             ...initState,
+            a1: -1,
+            b2: -1,
             a8: -3,
             b6: 1,
             b8: -3,
-            c1: -2,
+            c1: -1,
+            d4: -1,
+            e5: -1,
+            f6: -1,
             c2: -1,
-            c3: -1,
+            c3: -2,
             c4: -1,
             c5: -1,
             c6: -1,
-            c8: -1,
+            c8: -2,
             d8: -3,
             e8: -3,
             f8: -3,
@@ -121,9 +126,16 @@ describe('test heatmap.js', () => {
             g4: -1,
             g5: -1,
             g6: -1,
-            g7: -1,
+            g7: -2,
             g8: -2,
             h8: -2,
+            h1: -1,
+            h2: -1,
+            h3: -1,
+            h4: -1,
+            h5: -1,
+            h6: -1,
+            h7: -1,
         })
     })
 
@@ -155,6 +167,23 @@ describe('test heatmap.js', () => {
             g7: 1,
             h1: 2,
             h7: 1,
+        })
+    })
+
+    it('should calculate attackers for battery bishop and queen', () => {
+        const board = new Chess('8/8/8/8/5P2/8/3B4/8 w - - 0 1')
+        influences(board.fen())
+        expect(influences(board.fen())).toEqual({
+            ...initState,
+            a5: -1,
+            b4: -1,
+            c1: -1,
+            c3: -1,
+            e1: -1,
+            e3: -1,
+            e5: -1,
+            f4: -1,
+            g5: -2,
         })
     })
 })
