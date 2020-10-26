@@ -14,4 +14,4 @@ Copy generated main.js file script to the browser
 
 It works just for **white** at the moment
 
-![ScreenShot](https://i.imgur.com/EZfYFnj.png)
+![ScreenShot](https://i.imgur.com/EZfYFnj.png =250x250)
