@@ -9,7 +9,10 @@ $ yarn install
 ```shell
 $ yarn dev
 ```
-Open lichess.org
+1. Open lichess.org
+2. Open console from browser
+3. Paste generated ```main.js``` file
+
 Copy generated main.js file script to the browser
 
 It works just for **white** at the moment
