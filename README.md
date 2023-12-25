@@ -3,15 +3,18 @@ Helps you to improve in chess
 
 
 ```shell
-$ yarn install
+$ npm run install
 ```
 
 ```shell
-$ yarn dev
+$ npm run dev
 ```
+
+```shell
+$ npm run start:firefox
+```
+
 1. Open lichess.org
-2. Open console from browser
-3. Paste generated ```main.js``` file
 
 Copy generated main.js file script to the browser
 
