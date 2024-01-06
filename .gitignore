@@ -104,3 +104,4 @@ typings/
 
 dist/*
 !dist/injector.js
+!dist/manifest.json
